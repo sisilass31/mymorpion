@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* backgroung */
+section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-50deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%,
+            #cc6b8e 62%, #f17171 75%, #f1a271 87%, #f7e478 100%);
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* titre */
+h1 {
+    color: #fff;
+    background: rgba(58, 58, 58, 0.395);
+    padding: 10px;
+    margin: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+/* couleur du 'rejouer' */
+a {
+    color: #d16b7a;
+}
+
+/* jeu */
+#jeu {
+    display: inline-block;
+    background-color: rgb(61, 61, 61);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#jeu div {
+    margin-top: 2%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#jeu button {
+    color: rgb(45, 45, 45);
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 5px;
+    float: left;
+}
+
+/* status */
+#status {
+    background: #eee;
+    padding: 10px 0;
+    text-align: center;
+    color: #121212;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* .reset button {
+    background: rgba(58, 58, 58, 0.395);
+    padding: 10px;
+    margin: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+.reset button:hover {
+    background: #8f6aae;
+    box-shadow: 0px 0px 15px 4px #cc6b8e;
+}
+ */
+
+.reset a {
+    color: #fff;
+}
+
+.reset button {
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(58, 58, 58, 0.395);
+    padding: 8px 8px;
+    border: solid rgba(30, 30, 30, 0.395) 2px;
+    box-shadow: none;
+    border-radius: 10px;
+    margin: 25px;
+}
